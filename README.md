@@ -21,7 +21,9 @@ Following http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_gcc_cmake/
 We need to tell cmake where to look for the opencv libraries, because they aren't in the usual place. This can be done by setting an environment variable like this: 
 
     export CMAKE_PREFIX_PATH=/home/sjh/software/opencv-2.4.13/release/
-    
+  
+  
+(that from https://blogs.kde.org/2008/12/12/how-get-cmake-find-what-you-want-it)    
 NB: you'll need to add this to your .profile if you want this environment variable to be permanent. (edit your .profile file and add this line at the bottom).
 
 then it's just 
