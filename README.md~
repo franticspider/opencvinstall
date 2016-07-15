@@ -22,39 +22,19 @@ We need to tell cmake where to look for the opencv libraries, because they aren'
 
     export CMAKE_PREFIX_PATH=/home/sjh/software/opencv-2.4.13/release/
     
-NB: you'll need to add this to your .profile if you want this environment variable to be permanent. (edit your .profile file and add this line at the bottom).
+NB: you'll need to add this to your .profile if you want this environment variable to be permanent.     
 
 then it's just 
 
     cmake .
     make
   
-works fine. If you want to try this, go to the opencv_eclipse/src subdirectory of this project and enter the commands above - this should build the DisplayImage executable for you. 
-
-
-
-
+works fine
 
 
 ##Creating an eclipse CDT project
 
 Following https://cmake.org/Wiki/CMake:Eclipse_UNIX_Tutorial option 1
-
-
-###Creating a file inside eclipse
-
-A few more commands are needed to generate an eclipse project from the above files. Switch to the bin directory and type 
-
-    cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug ../src
-
-This tells cmake to build an eclipse project in Debug mode from the files in ../src. 
-
-You are now ready to import this project into eclipse, using file->import - see the link above for instructions
-
-
-
-
-
 
 
 
